@@ -1,0 +1,116 @@
+@import url(../vendor/fonts.css);
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media(min-width: 320px) {
+    /* HEADER 320px */
+    .header {
+        background: #4c5828;
+    }
+    .header__container {
+        position: relative;
+        z-index: 100;
+        margin: 0 20px 17px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__logo img {
+        width: 100px;
+        height: 10 0px;
+    }
+    .header__close-menu {
+        display: none;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__mobile-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+    .header__menu_item {
+        text-align: center;
+        width: 100vw;
+        border-bottom: 2px solid white;
+        padding: 20px;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .header__menu_item:hover {
+        opacity: 0.7;
+    }
+    .header__menu_item:first-child {
+        border-top: 2px solid white;
+    }
+    .header__menu_item a {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+@media(min-width: 768px) {
+    /* HEADER 768px */
+    .header__container {
+        margin: 0 30px 24px;
+        padding: 15px 0;
+    }
+    .header__logo {}
+    .haeder__logo-text {
+        display: none;
+    }
+    .header__open-menu {
+        display: none;
+    }
+    .header__menu {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    .header__menu_item {
+        margin-right: 34px;
+        width: auto;
+        border-bottom: none;
+        padding: 0;
+    }
+    .header__menu_item:last-child {
+        margin-right: 0;
+    }
+    .header__menu_item:first-child {
+        border-top: none;
+    }
+}
+
+@media(min-width: 1280px) {
+    /* HEADER 1280px */
+    .header {
+        position: relative;
+        z-index: 100;
+    }
+    .header__container {
+        margin: 0 110px 53px;
+    }
+    .header__menu_item {
+        margin-right: 35.5px;
+    }
+    .header__menu_item a {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
