@@ -18,7 +18,7 @@
     .header__container {
         position: relative;
         z-index: 100;
-        margin: 0 20px 17px;
+        margin: 0 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -61,12 +61,50 @@
         text-transform: uppercase;
         color: white;
     }
+    /* BANNER* 320px */
+    .banner {
+        height: 400px;
+        /* background-image: url(../images/banner-cat.jpg); */
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../images/banner-cat.jpg);
+        background-repeat: no-repeat;
+        background-color: rgba(57, 49, 43, .5);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner__title {
+        color: white;
+        margin: 60px 0 165px;
+        padding: 0;
+        font-size: 24px;
+    }
+    .banner__description {
+        color: white;
+        margin: 0 0 10px;
+        padding: 0;
+        font-size: 16px;
+    }
+    .banner__button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: 2px solid #fa0202;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .banner__button:hover {
+        color: #fa0202;
+        background-color: white;
+        border: 2px solid white;
+        transform: scale(1.05);
+    }
 }
 
 @media(min-width: 768px) {
     /* HEADER 768px */
     .header__container {
-        margin: 0 30px 24px;
+        margin: 0 30px;
         padding: 15px 0;
     }
     .header__logo {}
@@ -95,6 +133,23 @@
     .header__menu_item:first-child {
         border-top: none;
     }
+    /* BANNER* 768px */
+    .banner {
+        height: 550px;
+        background-position: center center;
+    }
+    .banner__title {
+        margin: 80px 0 215px;
+        font-size: 32px;
+    }
+    .banner__description {
+        margin: 0 0 20px;
+        font-size: 24px;
+    }
+    .banner__button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
 }
 
 @media(min-width: 1280px) {
@@ -104,7 +159,7 @@
         z-index: 100;
     }
     .header__container {
-        margin: 0 110px 53px;
+        margin: 0 110px;
     }
     .header__menu_item {
         margin-right: 35.5px;
@@ -112,5 +167,21 @@
     .header__menu_item a {
         font-size: 20px;
         line-height: 30px;
+    }
+    /* BANNER* 1280px */
+    .banner {
+        height: 720px;
+    }
+    .banner__title {
+        margin: 100px 0 305px;
+        font-size: 44px;
+    }
+    .banner__description {
+        margin: 0 0 40px;
+        font-size: 32px;
+    }
+    .banner__button {
+        font-size: 28px;
+        padding: 10px 20px;
     }
 }
