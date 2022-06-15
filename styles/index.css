@@ -6,7 +6,7 @@
 .page {
     position: relative;
     font-family: 'Oswald', sans-serif;
-    max-width: 1280px;
+    /* max-width: 1280px; */
     margin: 0 auto;
 }
 
@@ -145,6 +145,10 @@
     }
     /* LOOKING 320px */
     .looking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
         background: #4c5828;
         clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
     }
@@ -153,9 +157,11 @@
         padding: 50px 0 0;
         font-size: 36px;
         line-height: 40px;
+        align-self: flex-start;
         color: white;
     }
     .looking__cards {
+        max-width: 1280px;
         margin: 0 20px 40px;
         width: calc(100% - 40px);
         display: flex;
@@ -343,6 +349,7 @@
     }
     /* HEADER 1280px */
     .header {
+        width: 100vw;
         position: relative;
         z-index: 100;
     }
@@ -398,12 +405,12 @@
         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
     }
     .looking__title {
-        margin: 60px 0 60px 60px;
+        margin: 60px 0 60px calc((100vw - 1280px + 120px) / 2);
         padding: 100px 0 0;
     }
     .looking__cards {
         margin: 0 60px 60px;
-        width: calc(100% - 120px);
+        width: calc(1280px - 120px);
         padding-bottom: 40px;
     }
     .looking__card {
