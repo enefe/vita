@@ -65,7 +65,6 @@
     /* BANNER* 320px */
     .banner {
         height: 400px;
-        /* background-image: url(../images/banner-cat.jpg); */
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(../images/banner-cat.jpg);
         background-repeat: no-repeat;
         background-color: rgba(57, 49, 43, .5);
@@ -139,7 +138,6 @@
         font-size: 14px;
         line-height: 18px;
         text-align: center;
-        /* width: 135px; */
         margin: 15px 0;
         padding: 0;
     }
@@ -150,7 +148,7 @@
         align-items: center;
         width: 100vw;
         background: #4c5828;
-        clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
     }
     .looking__title {
         margin: 20px 0 20px 20px;
@@ -207,6 +205,76 @@
         background-color: white;
         border: 1px solid #fa0202;
     }
+    /* TEAM 320px */
+    .team {
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 0 100%);
+        background: #4c5828;
+        margin-bottom: 50px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .team__container {
+        padding: 0 20px;
+    }
+    .team__title {
+        margin: 0 0 40px;
+        padding: 0;
+        font-size: 36px;
+        line-height: 40px;
+        color: white;
+        text-align: start;
+    }
+    .team__description {
+        text-align: start;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .team__about-container {
+        margin: 40px 0 0;
+        padding: 20px 0;
+        border-top: 1px solid white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team__item {
+        height: 150px;
+        width: 100px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(250, 2, 2, 0.2) 0px 2px 8px 0px;
+        margin: 10px;
+    }
+    .team__num {
+        color: #fa0202;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .team__about {
+        margin: 10px 0;
+        width: 100px;
+        color: white;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .team__space {
+        height: 10px;
+    }
+    .team__image {
+        border-radius: 3px;
+        margin: 20px auto 80px;
+        width: 280px;
+        object-fit: contain;
+        box-shadow: rgba(250, 2, 2, 0.2) 0px 2px 8px 0px;
+    }
 }
 
 @media(min-width: 405px) {
@@ -221,7 +289,6 @@
         margin: 0 30px;
         padding: 15px 0;
     }
-    .header__logo {}
     .haeder__logo-text {
         display: none;
     }
@@ -331,6 +398,48 @@
         background: #fa0202;
         transform: scale(1.05);
     }
+    /* TEAM 768px */
+    .team {
+        clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+        margin-bottom: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .team__container {
+        width: calc(50vw - 40px);
+        padding: 0;
+        margin: 0 20px 50px;
+    }
+    .team__title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .team__description {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .team__item {
+        height: 130px;
+        margin: 10px;
+    }
+    .team__num {
+        color: #fa0202;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .team__about {
+        width: 80px;
+    }
+    .team__image {
+        border-radius: 3px;
+        max-height: 555px;
+        margin: 20px 0 80px;
+        width: calc(50% - 80px);
+        object-fit: cover;
+        box-shadow: rgba(250, 2, 2, 0.2) 0px 2px 8px 0px;
+    }
 }
 
 @media(min-width: 1000px) {
@@ -436,5 +545,41 @@
     }
     .looking__button {
         padding: 10px 18px;
+    }
+    /* TEAM 1280px */
+    .team {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        margin-bottom: 50px;
+        width: 100vw;
+    }
+    .team__container {
+        width: 560px;
+        margin-bottom: 50px;
+    }
+    .team__title {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .team__description {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .team__item {
+        margin: 15px;
+    }
+    .team__num {
+        color: #fa0202;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .team__about {
+        width: auto;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .team__image {
+        max-height: 555px;
+        margin: 20px 0 130px;
+        width: 560px;
     }
 }
